@@ -1,0 +1,16 @@
+current directory: /Users/mammy/Desktop/sha_first/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/mammy/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20181211-94727-1bg3c7i.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mammy/Desktop/sha_first/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/mammy/Desktop/sha_first/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/mammy/Desktop/sha_first/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20181211-94727-kdxxoj

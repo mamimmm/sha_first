@@ -1,0 +1,65 @@
+<div class="main top-main">
+
+    <header>
+      <div class="header-logo">
+         <%= link_to("SNS Word History Archive", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("SNS Word History Archiveとは", "#about") %>
+        </li>
+        <li>
+          <%= link_to("アンケートに回答する", "https://goo.gl/forms/PDyNLI5VcGDSFNDK2") %>
+        </li>
+      </ul>
+    </header>
+
+  <div class="top-wrapper">
+     <div class="container">
+         <h1>SNS Word History Archive</h1>
+             <p>意識していなかった自分の傾向や、SNSの空間を視覚化する<br>アーカイブサイトです。</p>
+             <p style="padding-bottom:8px;">オープンなTwitterアカウントのIDを入れると、頻出単語を分析します。</p>
+
+             <div class="form">
+                <%= form_tag("/search/result",:method => 'get') do %>
+                  <%= text_field_tag :username %>
+                  <%= submit_tag '分析', :name => nil %>
+                <% end %>
+            </div>
+      </div>
+    </div>
+
+    <div class="secondcontent-wrapper">
+        <div class="container" id="about">
+
+        <p>このサイトは文化構想学部表象・メディア論系 Creative Media R&Dゼミの卒業制作として作成されました。<br>もしよろしければお使いいただき、<span><a href="https://goo.gl/forms/PDyNLI5VcGDSFNDK2">こちらのアンケート</a></span>にご協力お願いします。</p>
+
+
+                <div class="heading">
+                    <h2>このサイトで出来ること</h2>
+                </div>
+
+              <div class="content-item">
+                  <div class="lesson-icon">
+                      <img src="/point1_save.svg" width="30px" height="30px">
+                      <p class="txt-contents">SNS個人史の保存</p>
+                   </div>
+             </div>
+
+              <div class="content-item">
+                  <div class="lesson-icon">
+                     <img src="/point2_graph.svg" width="30px" height="30px">
+                      <p class="txt-contents">個人の傾向分析
+                     </p>
+                   </div>
+             </div>
+
+              <div class="content-item">
+                  <div class="lesson-icon">
+                      <img src="/point3_mix.svg" width="30px" height="30px">
+                      <p class="txt-contents">他人史との関わり</p>
+                   </div>
+             </div>
+             
+        </div>
+    </div>
